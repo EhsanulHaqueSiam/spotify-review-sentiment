@@ -1,0 +1,61 @@
+[project]
+name = "spotify-review-sentiment"
+version = "0.1.0"
+description = "Spotify Review Sentiment Analysis using Naïve Bayes"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Ehsanul Haque Siam", email = "ehsanulhaquesiam@gmail.com"},
+]
+license = {text = "MIT"}
+keywords = ["sentiment-analysis", "naive-bayes", "nlp", "spotify", "machine-learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    # Core data science libraries
+    "pandas>=1.5.0",
+    "numpy>=1.21.0",
+    # Machine learning
+    "scikit-learn>=1.2.0",
+    # Text processing
+    "nltk>=3.8",
+    "spacy>=3.4.0",
+    # Data visualization
+    "matplotlib>=3.5.0",
+    "seaborn>=0.11.0",
+    # Kaggle dataset loading
+    "kagglehub>=0.2.0",
+    # Jupyter notebook support
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "pip>=25.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/EhsanulHaqueSiam/spotify-review-sentiment"
+Repository = "https://github.com/EhsanulHaqueSiam/spotify-review-sentiment"
+Issues = "https://github.com/EhsanulHaqueSiam/spotify-review-sentiment/issues"
+"Google Colab" = "https://colab.research.google.com/github/EhsanulHaqueSiam/spotify-review-sentiment/blob/main/spotify_sentiment_analysis_colab.ipynb"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
